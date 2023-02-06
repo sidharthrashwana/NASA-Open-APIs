@@ -1,0 +1,44 @@
+{% extends "/inherit/innerlayout.html" %}
+{% block body %}
+  {% if name %}
+  <div>
+    <center>
+      <form method="POST" action="/neows">
+          <label for="date1">Start Date:</label>
+              <input type="date" id="date1" name="start_date">
+          <label for="date2">End Date:</label>
+              <input type="date" id="date2" name="end_date">
+          <input type="submit">
+      </form>
+    </center>
+    {%for i in range(0, length)%}
+    <h1>Asteroid {{i+1}}</h1>
+      <p>ID : {{id[i]}}</p>
+      <p>NEO REFERENCE ID : {{neo_reference_id[i]}}</p>
+      <p>NAME : {{name[i]}}</p>
+      <p>NASA JPL URL : {{nasa_jpl_url[i]}}</p>
+      <p>ABSOLUTE MAGNITUDE : {{absolute_magnitude_h[i]}}</p>
+      <p>HAZARDOUS : {{is_potentially_hazardous_asteroid[i]}}</p>
+      <p>CLOSE APPROACH DATE: {{close_approach_data[i]}}</p>
+      <p>ESTIMATED DIAMETER((in meters)) : {{estimated_diameter[i]}} <b>Minimum {{estimated_diameter[i][1][1]['estimated_diameter_min']}} Maximum {{estimated_diameter[i][1][1]['estimated_diameter_max']}}</b></p>
+    {%endfor%}
+  </div>
+  {% else%}  
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  <div>
+    <p>With NeoWs a user can: search for Asteroids based on their closest approach date to Earth.</p>
+    <center>
+    <form method="POST" action="/neows">
+        <label for="date1">Start Date:</label>
+            <input type="date" id="date1" name="start_date">
+        <label for="date2">End Date:</label>
+            <input type="date" id="date2" name="end_date">
+        <input type="submit">
+    </form>
+  </center>
+  </div>
+  {% endif %}
+{% endblock %}

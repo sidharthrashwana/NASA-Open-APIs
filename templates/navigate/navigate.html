@@ -1,0 +1,11 @@
+{% extends "/inherit/innerlayout.html" %}
+{% block body %}
+
+<div>
+  <img align="left" height="400px" width="50%" src="{{url_for('static',filename='images/MoonOClock1024.jpg')}}">
+  <p>Features a new photograph or image related to astronomy every day, along with a brief explanation written by a professional astronomer. 
+    The images on APOD are often breathtaking, showcasing a wide range of celestial objects and phenomena such as planets, stars, galaxies, and nebulae. The explanations provided with each image offer interesting and educational background information about the featured image, making APOD a great resource for anyone interested in learning about astronomy. Whether you are an experienced astronomer or just have a casual interest in the subject, APOD is a fascinating and enjoyable way to learn about the wonders of the universe.</p>
+  <a class="btn btn-primary" href="/apod" role="button">Astronomy Picture of the Day</a>
+</div>
+
+  {% endblock %}

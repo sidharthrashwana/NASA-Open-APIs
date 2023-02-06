@@ -1,0 +1,45 @@
+{% extends "/inherit/innerlayout.html" %}
+{% block body %}
+  {% if length %}
+  <div>
+    <center>
+      <form method="POST" action="/donkiCME">
+          <label for="date1">Start Date:</label>
+              <input type="date" id="date1" name="start_date">
+          <label for="date2">End Date:</label>
+              <input type="date" id="date2" name="end_date">
+          <input type="submit">
+      </form>
+    </center>
+    {%for i in range(0, length)%}
+    <h1>DONKI CME {{i+1}}</h1>
+     <p>ID : {{id[i]}}</p>
+     <p>Catalog : {{catalog[i]}}</p>
+     <p>Start Time : {{startTime[i]}}</p>
+     <p>Source Location : {{sourceLocation[i]}}</p>
+     <p>Active Region : {{activeRegion[i]}}</p>
+     <p>Links : {{links[i]}}</p>
+     <p>Notes: {{notes[i]}}</p>
+     <p>cmeAnalyses : {{cmeAnalyse[i]}}</p>
+     <p>Linked Events :{{events[i]}}</p>
+    {%endfor%}
+  </div>
+  {% else%}  
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  <div>
+    <p>The Space Weather Database Of Notifications, Knowledge, Information (DONKI) is a comprehensive on-line tool for space weather forecasters, scientists, and the general space science community.    </p>
+    <center>
+    <form method="POST" action="/donkiCME">
+        <label for="date1">Start Date:</label>
+            <input type="date" id="date1" name="start_date">
+        <label for="date2">End Date:</label>
+            <input type="date" id="date2" name="end_date">
+        <input type="submit">
+    </form>
+  </center>
+  </div>
+  {% endif %}
+{% endblock %}

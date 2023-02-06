@@ -1,0 +1,14 @@
+{% extends "/inherit/Outerlayout.html" %}
+{% block body %}
+
+    <div class="alert alert-success">
+      <h1 class="display-4">Welcome!</h1>
+        <p class="lead">This website is designed for explorers.</p>
+      <hr class="my-4">
+       <p>This project is based on NASA Open APIs.</p>
+      <a class="btn btn-primary btn-lg" href="{{url_for('navigate')}}" role="button">Learn more</a>
+    </div>
+    <footer class="container">
+      <p align="right">&copy; Company 2017-2018</p>
+    </footer>
+  {% endblock %}
