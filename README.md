@@ -1,7 +1,7 @@
 # NASA Space App Challenge
 
 ## Overview
-This is a Flask web application developed for the NASA Space App Challenge. The application provides users with information related to astronomy, near-Earth objects, and Coronal Mass Ejections (CME) based on NASA's APIs.
+This is a Flask web application developed using the NASA Open APIs . The application provides users with information related to astronomy, near-Earth objects, and Coronal Mass Ejections (CME) based on NASA's APIs.
 
 ## Features
 1. **Home Page:**
@@ -59,6 +59,3 @@ This is a Flask web application developed for the NASA Space App Challenge. The 
 
 ## Configuration
 - Add your NASA API key to the designated placeholders in the `app.py` file.
-
-## Credits
-This project is developed for the NASA Space App Challenge by Sidharth Rashwana.
