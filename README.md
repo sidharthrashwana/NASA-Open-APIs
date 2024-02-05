@@ -27,12 +27,6 @@ This is a Flask web application developed using the NASA Open APIs . The applica
     - Allows users to input a start date and end date to retrieve information about Coronal Mass Ejections from NASA's API.
     - Displays details such as activity ID, catalog, start time, source location, active region number, links, notes, CME analyses, and linked events.
 
-## Prerequisites
-- Python 3.x
-- Flask
-- Flask-WTF
-- Flask-SQLAlchemy
-
 ## Installation
 1. Clone the repository:
     ```bash
@@ -43,8 +37,11 @@ This is a Flask web application developed using the NASA Open APIs . The applica
     ```bash
     python3.10 -m venv .venv
     ```
-
-3. Install the required packages:
+3. Activate virtual env
+   ```bash
+   source .venv/bin/activate
+   ```
+4. Install the required packages:
     ```bash
     pip install -r requirements.txt
     ```
