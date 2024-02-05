@@ -61,7 +61,4 @@ This is a Flask web application developed for the NASA Space App Challenge. The 
 - Add your NASA API key to the designated placeholders in the `app.py` file.
 
 ## Credits
-This project is developed for the NASA Space App Challenge by [Your Name].
-
-## License
-This project is licensed under the [MIT License](LICENSE).
+This project is developed for the NASA Space App Challenge by Sidharth Rashwana.
