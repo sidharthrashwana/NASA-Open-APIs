@@ -1,4 +1,6 @@
-# NASA Space App Challenge
+# NASA Open API
+
+This project, theNASA Open API, is developed and maintained by Sidharth Rashwana.
 
 ## Overview
 This is a Flask web application developed using the NASA Open APIs . The application provides users with information related to astronomy, near-Earth objects, and Coronal Mass Ejections (CME) based on NASA's APIs.
